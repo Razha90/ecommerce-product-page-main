@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; display: none;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container" >
+    <nav>
+      <div class="nav scrooling">
+        <div class="nav-flex">
+          <div class="mobile" style="z-index: 10; padding-right: 20px; color: black;">☰</div>
+          <a href="#"><img src="./images/logo.svg" alt="Logo"></a>
+          <div class="laptop">Collections</div>
+          <div class="laptop">Men</div>
+          <div class="laptop">Women</div>
+          <div class="laptop">About</div>
+          <div class="laptop">Contact</div>
+        </div>
+        
+        <div class="nav-flex">
+          <div id="yourCart"><span id="alertOrder">0</span><img src="./images/icon-cart.svg" alt="cart" width="20px" height="20px"></div>
+          <img src="./images/image-avatar.png" alt="Avatar" width="35px" height="35px">
+        </div>
+      </div>
+      <div class="mobile dropright">
+          <div class="dropright-menu">
+            <div class="closeMenu"><img src="./images/icon-close.svg" alt="Close"></div>
+            <div>Collections</div>
+            <div>Men</div>
+            <div>Women</div>
+            <div>About</div>
+            <div>Contact</div>
+          </div>
+      </div>
+
+    </nav>
+    <div class="cart">
+      <p class="cart-font">Cart</p>
+      <div class="cart-line"></div>
+      <div class="cart-create"></div>
+    </div>
+    <div class="line"></div>
+    <div class="float-picture disable-select mobile">
+    <img src="./images/close-orange.svg" alt="Close" id="fload-closed">
+    <div class="float-picture1">
+      <div id="float-back"><img src="./images/icon-next.svg" alt="Back Button"></div>
+      <img src="./images/image-product-1.jpg" alt="Main Picture" class="float-Mpicture">
+      <div id="float-next"><img src="./images/icon-next.svg" alt="Next Button"></div>
+    </div>
+    <div class="float-pngImage laptop">
+      <div><img src="" alt="product"></div>
+      <div><img src="" alt="product"></div>
+      <div><img src="" alt="product"></div>
+      <div><img src="" alt="product"></div>
+    </div>
+  </div>
+    <div class="main">
+      <div class="main-flex laptop">
+        <div>
+          <img src="" alt="Sepatu" id="main-picture" draggable="false" class="disable-select">
+          <div class="gallery disable-select">
+            <div onclick="produk1()"><img src="" alt="photo1" draggable="false"></div>
+            <div onclick="produk2()"><img src="" alt="photo2" draggable="false"></div>
+            <div onclick="produk3()"><img src="" alt="photo3" draggable="false"></div>
+            <div onclick="produk4()"><img src="" alt="photo4" draggable="false"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-flex main-font">
+        <div class="sneaker">SNEAKER COMPANY</div>
+        <div class="sneaker2">Fall Limited Edition Sneakers</div>
+        <div class="sneaker3">These low-profile sneakers are your perfect casual wear
+          companion. Featuring a durable rubber outer sole they'll withstand everything the weather can offer.
+        </div>
+        <div class="flex-sneaker4">
+          <div class="sneaker4">$125.00    <span class="potongan">50%</span></div>
+          <div>$250.00</div>
+        </div>
+
+        <div class="main-cart">
+          <div class="count">
+            <div draggable="false" class="disable-select">-</div>
+            <div data-value="1"></div>
+            <div draggable="false" class="disable-select">+</div>
+          </div>
+          <div class="addCart disable-select"><img src="./images/white-cart.svg" alt="Cart"><div>Add to cart</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <div class="black-screen"></div>
+</body>
+<script src="script.js"></script>
+</html>
